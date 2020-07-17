@@ -1,0 +1,38 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- ======================================================================================
+-- dba16_sec_SetProfilerPermissions
+--
+--
+-- Calls:		None
+--
+-- Description:	Give profiler permissions.
+--
+-- *** Run in SQLCMD mode.
+-- 
+-- Date			Modified By			Changes
+-- 02/05/2002   Aron E. Tekulsky    Initial Coding.
+-- 02/05/2018   Aron E. Tekulsky    Update to V140.
+-- ======================================================================================
+--	Copyright©2001 - 2025 Aron Tekulsky.  World wide rights reserved.
+--	Use of this code is free of charge but does not in any way imply transfer of 
+--	Copyright ownership to the user.
+-- ======================================================================================
+--
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+
+	use [master]
+	GO
+
+	GRANT ALTER TRACE TO [PIEDMONT\SwifTox]
+	GO
+
+END
+GO
