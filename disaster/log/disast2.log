@@ -1,0 +1,49 @@
+
+c:\disaster>echo on 
+
+c:\disaster>rem **** first map drive **** 
+
+c:\disaster>NET USE w: \\us37pfls01\data\users\atekulsky @Lawrence92 /user:iie\atekulsky 
+The command completed successfully.
+
+
+c:\disaster>xcopy  /F /Y c:\disaster\disast1.bat w:\"My Documents"\disaster\*.* 
+C:\disaster\disast1.bat -> W:\My Documents\disaster\disast1.bat
+1 File(s) copied
+
+c:\disaster>rem copy each item under projects to a backup directory on the server. 
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\projects\*.* w:\"My Documents"\projects\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\worddata\*.* w:\"My Documents"\worddata\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\xldata\*.* w:\"My Documents"\xldata\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\pptdata\*.* w:\"My Documents"\pptdata\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\vsddata\*.* w:\"My Documents"\vsddata\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\disaster\*.* w:\"My Documents"\disaster\*.* 
+C:\disaster\log\disast2.log
+1 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\work\*.* w:\"My Documents"\work\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\sqlserver\*.* w:\"My Documents"\sqlserver\*.* 
+0 File(s) copied
+
+c:\disaster>rem ***xcopy /D /I /S /Y /Z c:\lglhold\*.* w:\"My Documents"\lglhold\*.* 
+
+c:\disaster>rem ***xcopy /D /I /S /Y /Z C:\Users\atekulsky\.VirtualBox\HardDisks\"windows 7 x32 vm.vdi" w:\"My Documents"\vdi_safety\*.* 
+
+c:\disaster>rem ***xcopy /D /I /S /Y /Z C:\Users\atekulsky\.VirtualBox\HardDisks\"windows XP x32 vm.vdi" w:\"My Documents"\vdi_safety\*.* 
+
+c:\disaster>rem ***xcopy /D /I /S /Y /Z C:\Users\atekulsky\.VirtualBox\HardDisks\"windows 7 x64 vm.vdi" w:\"My Documents"\vdi_safety\*.* 
+
+c:\disaster>NET USE W:/delete 

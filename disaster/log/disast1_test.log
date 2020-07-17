@@ -1,0 +1,19 @@
+
+c:\disaster>echo on 
+
+c:\disaster>rem **** first map drive **** 
+
+c:\disaster>rem ***NET USE w: \\us37pfls01\data\users\atekulsky @Lawrence92 /user:iie\atekulsky 
+
+c:\disaster>rem copy each item under projects to a backup directory on the server. 
+
+c:\disaster>rem ***xcopy /D /I /S /Y /Z C:\VmWare\HardDisks\"windows_7_x32_vm.vmdk" w:\"My Documents"\vdi-safety\*.* 
+
+c:\disaster>xcopy /D /I /S /Y /Z C:\VmWare\HardDisks\"windows_XP_x32_vm.vmdk" w:\"My Documents"\vdi-safety\*.* 
+C:\VmWare\HardDisks\windows_XP_x32_vm.vmdk
+1 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z C:\temp\"windows_7_x64.vmdk" w:\"My Documents"\vdi-safety\*.* 
+0 File(s) copied
+
+c:\disaster>NET USE W:/delete 

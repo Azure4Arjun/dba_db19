@@ -1,0 +1,111 @@
+
+C:\disaster>echo on 
+
+C:\disaster>rem **** first map drive **** 
+
+C:\disaster>NET USE w: \\us37pfls01\data\users\atekulsky @Lawrence92 /user:iie\atekulsky 
+The command completed successfully.
+
+
+C:\disaster>xcopy  /F /Y c:\disaster\disast1.bat w:\"My Documents"\disaster\*.* 
+C:\disaster\disast1.bat -> W:\My Documents\disaster\disast1.bat
+1 File(s) copied
+
+C:\disaster>rem copy each item under projects to a backup directory on the server. 
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\projects\*.* w:\"My Documents"\projects\*.* 
+C:\projects\usp\2010\bad_grantees\clean_and_list_2.sql
+C:\projects\usp\2010\bad_grantees2\070110_speciallist.sql
+C:\projects\usp\2010\bad_grantees2\070110_special_2.sql
+C:\projects\usp\2010\bad_grantees2\070110_special_3.sql
+C:\projects\usp\2010\bad_grantees2\070110_special_4.sql
+C:\projects\usp\2010\bad_grantees2\add_visatype.sql
+C:\projects\usp\2010\bad_grantees2\baduspgrantees_051710.xls
+C:\projects\usp\2010\bad_grantees2\clean_and_list_2.sql
+C:\projects\usp\2010\bad_grantees2\clean_and_list_2_after.sql
+C:\projects\usp\2010\bad_grantees2\clone_bad_applicants.sql
+C:\projects\usp\2010\bad_grantees2\clone_bad_grantees.sql
+C:\projects\usp\2010\bad_grantees2\cr_dba_granteefix2.sql
+C:\projects\usp\2010\bad_grantees2\current_address.xls
+C:\projects\usp\2010\bad_grantees2\current_address_values.xls
+C:\projects\usp\2010\bad_grantees2\current_applicant.xls
+C:\projects\usp\2010\bad_grantees2\current_applicant_address.xls
+C:\projects\usp\2010\bad_grantees2\current_grantee_contract.xls
+C:\projects\usp\2010\bad_grantees2\current_grantee_general.xls
+C:\projects\usp\2010\bad_grantees2\current_grantee_nominal.xls
+C:\projects\usp\2010\bad_grantees2\current_people_personal.xls
+C:\projects\usp\2010\bad_grantees2\current_usp_applicant.xls
+C:\projects\usp\2010\bad_grantees2\current_usp_apply_ctry.xls
+C:\projects\usp\2010\bad_grantees2\delete_bad_applicant.sql
+C:\projects\usp\2010\bad_grantees2\delete_bad_homeaddr.sql
+C:\projects\usp\2010\bad_grantees2\findbadgrantees.sql
+C:\projects\usp\2010\bad_grantees2\grantees_62_before.xls
+C:\projects\usp\2010\bad_grantees2\grantees_matching_applicants_to349.sql
+C:\projects\usp\2010\bad_grantees2\list_3100357.sql
+C:\projects\usp\2010\bad_grantees2\list_currentvalues_bvadgrantee.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_address.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_applicant.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_applicant_addr.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_grantee_contr.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_grantee_genrl.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_grantee_nom.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_people_person.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_usp_applicant.sql
+C:\projects\usp\2010\bad_grantees2\p_dba_usp_clone_usp_appl_cntry.sql
+C:\projects\usp\2010\bad_grantees2\roll_iiedb1_applicant_fix.sql
+C:\projects\usp\2010\bad_grantees2\updated_address.xls
+C:\projects\usp\2010\bad_grantees2\updated_applicants.xls
+C:\projects\usp\2010\bad_grantees2\updated_applicants_qa.xls
+C:\projects\usp\2010\bad_grantees2\updated_applicants_qa_new.xls
+C:\projects\usp\2010\bad_grantees2\updated_grantees.xls
+C:\projects\usp\2010\bad_grantees2\updated_grantees_contract.xls
+C:\projects\usp\2010\bad_grantees2\updated_grantees_qa.xls
+C:\projects\usp\2010\bad_grantees2\updated_grantees_qa_new.xls
+C:\projects\usp\2010\bad_grantees2\updated_grantee_nominal.xls
+C:\projects\usp\2010\bad_grantees2\updated_people_personal.xls
+C:\projects\usp\2010\bad_grantees2\upd_dba_granteefix2_appint.sql
+C:\projects\usp\2010\bad_grantees2\upd_dba_granteefix2_appint_1.sql
+C:\projects\usp\2010\bad_grantees2\verify_delete.sql
+C:\projects\usp\2010\bad_grantees2\beverly\update_address_03100357.sql
+C:\projects\usp\2010\bad_grantees2\beverly\update_granteel_03100357.sql
+C:\projects\usp\2010\bad_grantees2\beverly\update_personal_03100357.sql
+C:\projects\usp\2010\bad_grantees2\beverly\donotdo\update_contract_03100028.sql
+C:\projects\usp\2010\bad_grantees2\beverly\donotdo\update_grantee_nominal_03100357.sql
+C:\projects\usp\2010\bad_grantees2\testing\IIEWIDE - Enterprise Duplicates.txt
+58 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\worddata\*.* w:\"My Documents"\worddata\*.* 
+C:\worddata\at\d\protection\pblog.doc
+1 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\xldata\*.* w:\"My Documents"\xldata\*.* 
+0 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\pptdata\*.* w:\"My Documents"\pptdata\*.* 
+0 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\vsddata\*.* w:\"My Documents"\vsddata\*.* 
+0 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\disaster\*.* w:\"My Documents"\disaster\*.* 
+C:\disaster\log\disast1.log
+1 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\work\*.* w:\"My Documents"\work\*.* 
+0 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z c:\sqlserver\*.* w:\"My Documents"\sqlserver\*.* 
+0 File(s) copied
+
+C:\disaster>rem ***xcopy /D /I /S /Y /Z c:\lglhold\*.* w:\"My Documents"\lglhold\*.* 
+
+C:\disaster>xcopy /D /I /S /Y /Z C:\Users\atekulsky\.VirtualBox\HardDisks\"windows 7 x32 vm.vdi" w:\"My Documents"\vdi_safety\*.* 
+0 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z C:\Users\atekulsky\.VirtualBox\HardDisks\"windows XP x32 vm.vdi" w:\"My Documents"\vdi_safety\*.* 
+0 File(s) copied
+
+C:\disaster>xcopy /D /I /S /Y /Z C:\Users\atekulsky\.VirtualBox\HardDisks\"windows 7 x64 vm.vdi" w:\"My Documents"\vdi_safety\*.* 
+0 File(s) copied
+
+C:\disaster>NET USE W:/delete 

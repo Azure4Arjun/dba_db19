@@ -1,0 +1,63 @@
+
+c:\disaster>echo on  N:\203 - Information Technology Shared Data 
+on  N:\203 - Information Technology Shared Data
+
+c:\disaster>rem **** first map drive **** 
+
+c:\disaster>rem ***NET USE w: \\us37pfls01\data\users\atekulsky @Lawrence92 /user:iie\atekulsky 
+
+c:\disaster>NET USE w: \\usnypfls03\shared @Lawrence92 /user:iie\atekulsky 
+The command completed successfully.
+
+
+c:\disaster>xcopy  /F /Y c:\disaster\disast1.bat w:\"203 - Information Technology Shared Data"\Aron\disaster\*.* 
+C:\disaster\disast1.bat -> W:\203 - Information Technology Shared Data\Aron\disaster\disast1.bat
+1 File(s) copied
+
+c:\disaster>rem copy each item under projects to a backup directory on the server. 
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\projects\*.* w:\"203 - Information Technology Shared Data"\Aron\projects2010\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\worddata\*.* w:\"203 - Information Technology Shared Data"\Aron\worddata2010\*.* 
+C:\worddata\statusreports\2011\aet20110819.doc
+1 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\xldata\*.* w:\"203 - Information Technology Shared Data"\Aron\xldata2010\*.* 
+C:\xldata\timesheet\2011\IIE IT Timesheet0811.xls
+1 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\pptdata\*.* w:\"203 - Information Technology Shared Data"\Aron\pptdata2010\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\vsddata\*.* w:\"203 - Information Technology Shared Data"\Aron\vsddata2010\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\disaster\*.* w:\"203 - Information Technology Shared Data"\Aron\disaster\*.* 
+C:\disaster\log\disast3.log
+1 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\work\*.* w:\"203 - Information Technology Shared Data"\Aron\work2010\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z c:\sqlserver\*.* w:\"203 - Information Technology Shared Data"\Aron\sqlserver\*.* 
+0 File(s) copied
+
+c:\disaster>rem ***xcopy /D /I /S /Y /Z c:\lglhold\*.* w:\"203 - Information Technology Shared Data"\Aron\lglhold\*.* 
+
+c:\disaster>NET USE W:/delete 
+
+c:\disaster>NET USE x: \\usnypfls03\data\users\atekulsky @Lawrence92 /user:iie\atekulsky 
+The command completed successfully.
+
+
+c:\disaster>xcopy /D /I /S /Y /Z C:\VmWare\HardDisks\"windows_7_x32_vm.vmdk"  x:\"My Documents"\vdi-safety\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z C:\VmWare\HardDisks\"windows_XP_x32_vm.vmdk" x:\"My Documents"\vdi-safety\*.* 
+0 File(s) copied
+
+c:\disaster>xcopy /D /I /S /Y /Z C:\VmWare\HardDisks\"window_7_x64.vmdk"      x:\"My Documents"\vdi-safety\*.* 
+0 File(s) copied
+
+c:\disaster>NET USE x:/delete 
