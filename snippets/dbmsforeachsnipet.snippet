@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmins="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title> MSFOrEach</Title>
+      <Shortcut></Shortcut>
+      <Description> Set up for MSFOrEach get all database names from master Db.</Description>
+      <Author>
+        --	Copyright©2001 - 2025 Aron Tekulsky.  World wide rights reserved.
+        --	Use of this code is free of charge but does not in any way imply transfer of
+        --	Copyright ownership to the user.
+      </Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <snippet>
+      <Code Language="SQL">
+        <![CDATA[
+				-- My snipet sql code goes here --
+				
+				-- Declare the cursor.
+					EXEC sp_MSforeachdb
+					N'IF EXISTS (SELECT 1 FROM (SELECT DISTINCT [name]
+						FROM sys.databases WHERE [state_desc] = ''ONLINE''
+							AND [database_id] > 4
+							AND [name] != ''pubs''
+							AND [name] != ''Northwind''
+							AND [name] != ''distribution''
+							AND [name] NOT LIKE ''ReportServer%''
+							AND [name] NOT LIKE ''Adventure%'') AS names WHERE [name] = ''?'')
+					BEGIN
+						USE [?];
+						
+						INSERT INTO <mytable>
+							(<mycol1>>, <mycol2>)
+						SELECT DB_ID (''?''), <mysourcecol1>
+
+				]]>
+      </Code>
+    </snippet>
+  </CodeSnippet>
+</CodeSnippets>
