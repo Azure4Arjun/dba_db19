@@ -1,0 +1,1 @@
+Get-ChildItem -recurse *.sql | Select-String -Pattern dm_os_waiting_tasks
