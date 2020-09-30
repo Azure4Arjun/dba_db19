@@ -1,0 +1,1 @@
+DEL /q  f:\restore\*.zip

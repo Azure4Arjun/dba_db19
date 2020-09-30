@@ -1,0 +1,9 @@
+ restore database bobcms from DISK='\\localhost\restore\dumps\bobcms_backup_20120103005909.bak ' with replace
+ restore database cdr from DISK='\\localhost\restore\dumps\cdr_backup_20120103005920.bak ' with replace
+ restore database FGS from DISK='\\localhost\restore\dumps\FGS_backup_20120103005943.bak ' with replace
+ restore database iiesecurityapplicant_assyst from DISK='\\localhost\restore\dumps\iiesecurityapplicant_assyst_backup_20120103010925.bak ' with replace
+ restore database iie_dm_finance from DISK='\\localhost\restore\dumps\iie_dm_finance_backup_20120103015028.bak ' with replace
+ restore database iie_enterprise from DISK='\\localhost\restore\dumps\iie_enterprise_backup_20120103010256.bak ' with replace
+ restore database iie_enterprise_sec from DISK='\\localhost\restore\dumps\iie_enterprise_sec_backup_20120103010406.bak ' with replace
+ restore database paymentrequest from DISK='\\localhost\restore\dumps\paymentrequest_backup_20120103010953.bak ' with replace
+ restore database sevis from DISK='\\localhost\restore\dumps\sevis_backup_20120103010005.bak ' with replace
