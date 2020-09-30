@@ -2,8 +2,8 @@ USE [dba_db19]
 GO
 
 /****** Object:  Table [dbo].[dbbackups]    Script Date: 7/27/2019 8:44:21 AM ******/
-DROP TABLE [dbo].[dbbackups]
-GO
+----DROP TABLE [dbo].[dbbackups]
+----GO
 
 /****** Object:  Table [dbo].[dbbackups]    Script Date: 7/27/2019 8:44:21 AM ******/
 SET ANSI_NULLS ON
@@ -12,7 +12,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[dbbackups](
+CREATE TABLE [dbo].[dba_dbbackups](
 	[servern] [nvarchar](128) NULL,
 	[instance_id] [int] NULL,
 	[job_id] [uniqueidentifier] NULL,
