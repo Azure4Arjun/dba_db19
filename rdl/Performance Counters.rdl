@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <RightMargin>1in</RightMargin>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox52">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <Format>g</Format>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Top>0.375in</Top>
+        <rd:DefaultName>textbox52</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= Globals!ExecutionTime</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox46">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>11pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>0.125in</Top>
+        <rd:DefaultName>textbox46</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>3.375in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Performance Counters</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Rectangle Name="Params">
+        <ZIndex>1</ZIndex>
+        <Top>0.125in</Top>
+        <ReportItems>
+          <Textbox Name="textbox4">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <Top>0.75in</Top>
+            <Width>1.625in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!a_finish.Value</Value>
+            <Left>4.375in</Left>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <Top>0.75in</Top>
+            <rd:DefaultName>textbox3</rd:DefaultName>
+            <Width>1.625in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!a_start.Value</Value>
+            <Left>1.375in</Left>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <Top>0.75in</Top>
+            <Width>1.25in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Finish:</Value>
+            <Left>3in</Left>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <Top>0.75in</Top>
+            <Width>1.25in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Start:</Value>
+          </Textbox>
+          <Textbox Name="textbox59">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <Top>0.5in</Top>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!counter_id.Label</Value>
+            <Left>1.375in</Left>
+          </Textbox>
+          <Textbox Name="name_2">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <Top>0.25in</Top>
+            <rd:DefaultName>name_2</rd:DefaultName>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!srv_id.Label</Value>
+            <Left>1.375in</Left>
+          </Textbox>
+          <Textbox Name="textbox56">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Top>0.5in</Top>
+            <rd:DefaultName>textbox56</rd:DefaultName>
+            <Height>0.25in</Height>
+            <Width>1.25in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Counter:</Value>
+          </Textbox>
+          <Textbox Name="textbox55">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <Top>0.25in</Top>
+            <rd:DefaultName>textbox55</rd:DefaultName>
+            <Height>0.25in</Height>
+            <Width>1.25in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Server:</Value>
+          </Textbox>
+          <Textbox Name="textbox54">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <BackgroundColor>Moccasin</BackgroundColor>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <rd:DefaultName>textbox54</rd:DefaultName>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>Report parameters</Value>
+          </Textbox>
+        </ReportItems>
+        <Height>1in</Height>
+        <Width>6.375in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Left>4in</Left>
+      </Rectangle>
+      <Chart Name="chart1">
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Legend>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!value.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker />
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <Style />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </CategoryAxis>
+        <DataSetName>Perf</DataSetName>
+        <Type>Line</Type>
+        <Top>1.375in</Top>
+        <Title />
+        <Width>10.625in</Width>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart1_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!stamp.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Sorting>
+                <SortBy>
+                  <SortExpression>=Fields!stamp.Value</SortExpression>
+                  <Direction>Ascending</Direction>
+                </SortBy>
+              </Sorting>
+              <Label>=Fields!stamp.Value</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Subtype>Plain</Subtype>
+        <PlotArea>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+            <BackgroundColor>LightGrey</BackgroundColor>
+          </Style>
+        </PlotArea>
+        <Left>0.125in</Left>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <Style>
+              <Format>#,#</Format>
+            </Style>
+            <MajorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <Visible>true</Visible>
+          </Axis>
+        </ValueAxis>
+      </Chart>
+    </ReportItems>
+    <Style />
+    <Height>6.375in</Height>
+  </Body>
+  <TopMargin>1in</TopMargin>
+  <DataSources>
+    <DataSource Name="SQLH2Repository">
+      <rd:DataSourceID>6a135f5f-dc83-4fd3-95f2-d4542b3a05ce</rd:DataSourceID>
+      <DataSourceReference>SQLH2Repository</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Code />
+  <Width>11in</Width>
+  <DataSets>
+    <DataSet Name="Servers">
+      <Fields>
+        <Field Name="srv_id">
+          <DataField>srv_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     srv_id, name
+FROM         dbo.mgr_server s
+WHERE     EXISTS
+                          (SELECT     *
+                            FROM          perf p
+                            WHERE      s.srv_id = p.srv_id)
+ORDER BY name</CommandText>
+      </Query>
+    </DataSet>
+    <DataSet Name="Counters">
+      <Fields>
+        <Field Name="counter_id">
+          <DataField>counter_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="counter">
+          <DataField>counter</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     counter_id, object + ' | ' + counter + CASE WHEN instance IS NULL THEN '' ELSE ' | ' + instance END AS counter
+FROM         dbo.dp_counters d
+WHERE     EXISTS
+                          (SELECT     *
+                            FROM          perf p
+                            WHERE      p.srv_id = @srv_id AND d.counter_id = p.counter_id)
+ORDER BY object, counter, instance</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>=Parameters!srv_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="Perf">
+      <Fields>
+        <Field Name="stamp">
+          <DataField>stamp</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="value">
+          <DataField>value</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     stamp, value
+FROM         perf p
+WHERE     srv_id = @srv_id AND counter_id = @counter_id AND stamp BETWEEN @a_start AND @a_finish
+ORDER BY stamp</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>=Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@counter_id">
+            <Value>=Parameters!counter_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@a_start">
+            <Value>=Parameters!a_start.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@a_finish">
+            <Value>=Parameters!a_finish.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>1in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description>Display chart for each performance counter </Description>
+  <rd:ReportID>af43f34e-4d26-4c83-abc0-eecebd8fb63e</rd:ReportID>
+  <BottomMargin>1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="srv_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>srv_id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Server</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>srv_id</ValueField>
+          <LabelField>name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="counter_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Counters</DataSetName>
+          <ValueField>counter_id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Counter</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Counters</DataSetName>
+          <ValueField>counter_id</ValueField>
+          <LabelField>counter</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="a_start">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Now.AddDays(-7).Date</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Start</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="a_finish">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Now.AddDays(1).Date</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Finish</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+</Report>

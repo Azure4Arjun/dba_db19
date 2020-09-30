@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <RightMargin>1in</RightMargin>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox52">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <Format>g</Format>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>36</ZIndex>
+        <Top>0.375in</Top>
+        <rd:DefaultName>textbox52</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= Globals!ExecutionTime</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox46">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>11pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>35</ZIndex>
+        <Top>0.125in</Top>
+        <rd:DefaultName>textbox46</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>3.625in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>SQL Server Instance Overview</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="datein">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>34</ZIndex>
+        <Top>0.875in</Top>
+        <rd:DefaultName>datein</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!datein.Value, "InstInfo")</Value>
+        <Left>1.75in</Left>
+      </Textbox>
+      <Textbox Name="run_id">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Right</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>33</ZIndex>
+        <Top>0.875in</Top>
+        <rd:DefaultName>run_id</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>0.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!run_id.Value, "InstInfo")</Value>
+        <Left>1in</Left>
+      </Textbox>
+      <Textbox Name="textbox42">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Right</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>32</ZIndex>
+        <Top>0.875in</Top>
+        <Height>0.25in</Height>
+        <Width>0.875in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Latest Run:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Table Name="table3">
+        <Height>0.75in</Height>
+        <ZIndex>31</ZIndex>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox30">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Path</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Size</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox35">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>textbox35</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Depth</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="path">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <rd:DefaultName>path</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!path.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="logsize">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>#,#</Format>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>logsize</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!logsize.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="depth">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>depth</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!depth.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>Errorlog</DataSetName>
+        <Top>5.5in</Top>
+        <Width>6.5in</Width>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox39">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <rd:DefaultName>textbox39</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox40">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>textbox40</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox41">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <rd:DefaultName>textbox41</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.125in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>4.375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.875in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+      <Textbox Name="textbox29">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>30</ZIndex>
+        <Top>5.25in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Errorlog:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox28">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>29</ZIndex>
+        <Top>3.75in</Top>
+        <rd:DefaultName>textbox28</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=Count (Fields!comment.Value , "Configs")</Value>
+        <Left>2.875in</Left>
+      </Textbox>
+      <Table Name="table2">
+        <Height>0.75in</Height>
+        <ZIndex>28</ZIndex>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Configuration Setting</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox26">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <rd:DefaultName>textbox26</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Default</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox27">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>textbox27</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Current</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="comment">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <rd:DefaultName>comment</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!comment.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Default">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>Default</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Default.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Current">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>Current</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Current.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>Configs</DataSetName>
+        <Top>4in</Top>
+        <Width>6.5in</Width>
+        <Visibility>
+          <Hidden>=(CountRows("Configs")=0)</Hidden>
+        </Visibility>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox31">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <rd:DefaultName>textbox31</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox32">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>textbox32</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox33">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <rd:DefaultName>textbox33</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.125in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>4.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+      <Textbox Name="textbox24">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>27</ZIndex>
+        <Top>3.75in</Top>
+        <Height>0.25in</Height>
+        <Width>2.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Non-default Configuration Settings:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="flags">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>26</ZIndex>
+        <Top>4.875in</Top>
+        <rd:DefaultName>flags</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>4.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!flags.Value, "TraceFlags")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="textbox23">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>25</ZIndex>
+        <Top>4.875in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Global Trace Flags:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="trace_id_1">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>24</ZIndex>
+        <Top>6.375in</Top>
+        <rd:DefaultName>trace_id_1</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=CountDistinct(Fields!trace_id.Value, "Traces")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="textbox22">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>23</ZIndex>
+        <Top>6.375in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Active Traces:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="AD">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>22</ZIndex>
+        <Top>3.25in</Top>
+        <rd:DefaultName>AD</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!AD.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="NumLicenses">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>21</ZIndex>
+        <Top>2.5in</Top>
+        <rd:DefaultName>NumLicenses</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=Sum(Fields!NumLicenses.Value, "InstInfo2")</Value>
+        <Left>3.75in</Left>
+      </Textbox>
+      <Textbox Name="name_1">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>20</ZIndex>
+        <Top>2.5in</Top>
+        <rd:DefaultName>name_1</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.875in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!name.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="SingleUser">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>19</ZIndex>
+        <Top>2in</Top>
+        <rd:DefaultName>SingleUser</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!SingleUser.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="IntegratedOnly">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>18</ZIndex>
+        <Top>2.25in</Top>
+        <rd:DefaultName>IntegratedOnly</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!IntegratedOnly.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="FT">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>17</ZIndex>
+        <Top>3in</Top>
+        <rd:DefaultName>FT</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!FT.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="Clustered">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <Top>2.75in</Top>
+        <rd:DefaultName>Clustered</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!Clustered.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="textbox21">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <Top>3.25in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Registered in AD:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <Top>3in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>FullText installed:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox19">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <Top>2.75in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Clustered:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <Top>2.5in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Licenses:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <Top>2.25in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Integrated Security Only:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <Top>2in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>SingleUser:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <Top>1.75in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Collation:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="Collation">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <Top>1.75in</Top>
+        <rd:DefaultName>Collation</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>2.875in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!Collation.Value, "InstInfo2")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Table Name="table1">
+        <Height>0.75in</Height>
+        <ZIndex>7</ZIndex>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>TraceID</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Property</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>PaleGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="name">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>name</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!name.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="value">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>value</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!value.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>Traces</DataSetName>
+        <Top>6.625in</Top>
+        <Width>6.5in</Width>
+        <TableGroups>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>0.25in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="trace_id">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>Honeydew</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>5</ZIndex>
+                          <rd:DefaultName>trace_id</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!trace_id.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox7">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>Honeydew</BackgroundColor>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>4</ZIndex>
+                          <rd:DefaultName>textbox7</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox8">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>Honeydew</BackgroundColor>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>3</ZIndex>
+                          <rd:DefaultName>textbox8</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <Grouping Name="table1_Group1">
+              <GroupExpressions>
+                <GroupExpression>=Fields!trace_id.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </TableGroup>
+        </TableGroups>
+        <Visibility>
+          <Hidden>=(CountRows("Traces")=0)</Hidden>
+        </Visibility>
+        <Left>0.125in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>4.625in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+      <Textbox Name="State">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <BackgroundColor>=IIf( Fields!State.Value = 0,"Red","Green")</BackgroundColor>
+          <Color>=IIf( Fields!State.Value = 0,"Red","Green")</Color>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <Top>1.25in</Top>
+        <rd:DefaultName>State</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=IIf(First(Fields!State.Value, "InstInfo")=0, "Stopped","Running")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Top>1.25in</Top>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>State:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <Top>1.5in</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.75in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Version:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="plevel">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Top>1.5in</Top>
+        <rd:DefaultName>plevel</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!plevel.Value, "InstInfo")</Value>
+        <Left>4.75in</Left>
+      </Textbox>
+      <Textbox Name="edition">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>1.5in</Top>
+        <rd:DefaultName>edition</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.875in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!edition.Value, "InstInfo")</Value>
+        <Left>2.875in</Left>
+      </Textbox>
+      <Textbox Name="version">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Top>1.5in</Top>
+        <rd:DefaultName>version</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!version.Value, "InstInfo")</Value>
+        <Left>1.875in</Left>
+      </Textbox>
+      <Rectangle Name="Params">
+        <Top>0.125in</Top>
+        <ReportItems>
+          <Textbox Name="textbox59">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <Top>0.5in</Top>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!inst_id.Label</Value>
+            <Left>1in</Left>
+          </Textbox>
+          <Textbox Name="name_2">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <Top>0.25in</Top>
+            <rd:DefaultName>name_2</rd:DefaultName>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!srv_id.Label</Value>
+            <Left>1in</Left>
+          </Textbox>
+          <Textbox Name="textbox56">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Top>0.5in</Top>
+            <rd:DefaultName>textbox56</rd:DefaultName>
+            <Width>0.875in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Instance:</Value>
+          </Textbox>
+          <Textbox Name="textbox55">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <Top>0.25in</Top>
+            <rd:DefaultName>textbox55</rd:DefaultName>
+            <Height>0.25in</Height>
+            <Width>0.875in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Server:</Value>
+          </Textbox>
+          <Textbox Name="textbox54">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <BackgroundColor>Moccasin</BackgroundColor>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <rd:DefaultName>textbox54</rd:DefaultName>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>Report parameters</Value>
+          </Textbox>
+        </ReportItems>
+        <Height>0.75in</Height>
+        <Width>3.375in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Left>4in</Left>
+      </Rectangle>
+    </ReportItems>
+    <Style />
+    <Height>7.625in</Height>
+  </Body>
+  <TopMargin>1in</TopMargin>
+  <DataSources>
+    <DataSource Name="SQLH2Repository">
+      <rd:DataSourceID>f311e53a-76cf-4fe8-96d8-a7332f726d79</rd:DataSourceID>
+      <DataSourceReference>SQLH2Repository</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Code />
+  <Width>9.20833in</Width>
+  <DataSets>
+    <DataSet Name="Servers">
+      <Fields>
+        <Field Name="srv_id">
+          <DataField>srv_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     srv_id, name
+FROM         dbo.mgr_server s
+WHERE     EXISTS
+                          (SELECT     *
+                            FROM          mgr_instance i
+                            WHERE      s.srv_id = i.srv_id)
+ORDER BY name</CommandText>
+      </Query>
+    </DataSet>
+    <DataSet Name="Instances">
+      <Fields>
+        <Field Name="inst_id">
+          <DataField>inst_id</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     inst_id, name
+FROM         dbo.mgr_instance
+WHERE     (srv_id = @srv_id)
+ORDER BY inst_id</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="InstInfo">
+      <Fields>
+        <Field Name="major">
+          <DataField>major</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="version">
+          <DataField>version</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="edition">
+          <DataField>edition</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="plevel">
+          <DataField>plevel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="State">
+          <DataField>State</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="run_id">
+          <DataField>run_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="datein">
+          <DataField>datein</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     i.major, i.version, i.edition, i.plevel, i.IsRunning AS State, r.run_id, r.datein
+FROM         dbo.c_instance i INNER JOIN
+                      dbo.mgr_run r ON i.run_id = r.run_id
+WHERE     (i.srv_id = @srv_id) AND (i.inst_id = @inst_id)</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="Traces">
+      <Fields>
+        <Field Name="trace_id">
+          <DataField>trace_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="value">
+          <DataField>value</DataField>
+          <rd:TypeName>System.Object</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     t.trace_id, p.name, t.value
+FROM         c_trace t JOIN
+                      d_TraceProperty p ON (t.property = p.property)
+WHERE     srv_id = @srv_id AND inst_id = @inst_id
+ORDER BY t.property</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="InstInfo2">
+      <Fields>
+        <Field Name="Collation">
+          <DataField>Collation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Clustered">
+          <DataField>Clustered</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FT">
+          <DataField>FT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IntegratedOnly">
+          <DataField>IntegratedOnly</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SingleUser">
+          <DataField>SingleUser</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumLicenses">
+          <DataField>NumLicenses</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AD">
+          <DataField>AD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     i.Collation, CASE i.IsClustered WHEN 1 THEN 'Yes' ELSE 'No' END AS 'Clustered', CASE i.IsFullTextInstalled WHEN 1 THEN 'Yes' ELSE 'No' END AS FT,
+                       CASE i.IsIntegratedSecurityOnly WHEN 1 THEN 'Yes' ELSE 'No' END AS IntegratedOnly, 
+                      CASE i.IsSingleUser WHEN 1 THEN 'Yes' ELSE 'No' END AS SingleUser, l.name, i.NumLicenses, 
+                      CASE i.IsAD WHEN 1 THEN 'Yes' ELSE 'No' END AS AD
+FROM         dbo.c_instance2 i INNER JOIN
+                      dbo.d_LicenseType l ON i.LicenseType = l.LicenseType
+WHERE     (i.srv_id = @srv_id) AND (i.inst_id = @inst_id)</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="TraceFlags">
+      <Fields>
+        <Field Name="flags">
+          <DataField>flags</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     flags
+FROM         c_GlobalTraceFlags
+WHERE     srv_id = @srv_id AND inst_id = @inst_id</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="Configs">
+      <Fields>
+        <Field Name="comment">
+          <DataField>comment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Default">
+          <DataField>Default</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Current">
+          <DataField>Current</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     d.comment, d.value 'Default', c.value 'Current'
+FROM         c_syscurconfigs c JOIN
+                      c_instance i ON (c.srv_id = i.srv_id AND c.inst_id = i.inst_id) JOIN
+                      d_syscurconfigs d ON (c.config = d.config AND d.ver_id = i.major - 7)
+WHERE     c.srv_id = @srv_id AND c.inst_id = @inst_id AND c.config &gt; 4</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="Errorlog">
+      <Fields>
+        <Field Name="path">
+          <DataField>path</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="logsize">
+          <DataField>logsize</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="depth">
+          <DataField>depth</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     path, logsize, depth
+FROM         c_errorlog c
+WHERE     c.srv_id = @srv_id AND c.inst_id = @inst_id</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>1in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description>Most recent configuration values for each SQL Server Instance</Description>
+  <rd:ReportID>afc53ed0-ee2f-4227-b2c5-13f86a2965ad</rd:ReportID>
+  <BottomMargin>1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="srv_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>srv_id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Server</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>srv_id</ValueField>
+          <LabelField>name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="inst_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Instances</DataSetName>
+          <ValueField>inst_id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Instance</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Instances</DataSetName>
+          <ValueField>inst_id</ValueField>
+          <LabelField>name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+</Report>

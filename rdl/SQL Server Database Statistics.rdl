@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <RightMargin>1in</RightMargin>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox5">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <Format>g</Format>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <Top>0.375in</Top>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= Globals!ExecutionTime</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox46">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>11pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <Top>0.125in</Top>
+        <rd:DefaultName>textbox46</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>3.625in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>SQL Server Database Statistics</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Rectangle Name="Params">
+        <ZIndex>5</ZIndex>
+        <Top>0.125in</Top>
+        <ReportItems>
+          <Textbox Name="textbox59">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <Top>0.5in</Top>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!inst_id.Label</Value>
+            <Left>1.375in</Left>
+          </Textbox>
+          <Textbox Name="name_2">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <Top>0.25in</Top>
+            <rd:DefaultName>name_2</rd:DefaultName>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>= Parameters!srv_id.Label</Value>
+            <Left>1.375in</Left>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Top>0.5in</Top>
+            <Width>1.25in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Instance:</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <Top>0.25in</Top>
+            <Height>0.25in</Height>
+            <Width>1.25in</Width>
+            <CanGrow>true</CanGrow>
+            <Value>Server:</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <BackgroundColor>Moccasin</BackgroundColor>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingRight>2pt</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <Height>0.25in</Height>
+            <CanGrow>true</CanGrow>
+            <Value>Report parameters</Value>
+          </Textbox>
+        </ReportItems>
+        <Height>0.75in</Height>
+        <Width>3.375in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Left>4in</Left>
+      </Rectangle>
+      <Textbox Name="datein">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <Top>0.875in</Top>
+        <rd:DefaultName>datein</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!datein.Value, "RunInfo")</Value>
+        <Left>1.75in</Left>
+      </Textbox>
+      <Textbox Name="run_id">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Right</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Top>0.875in</Top>
+        <rd:DefaultName>run_id</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>0.625in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>=First(Fields!run_id.Value, "RunInfo")</Value>
+        <Left>1.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Right</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>0.875in</Top>
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Latest Run:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>12pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Top>1.25in</Top>
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>2.625in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Databases - general info</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Table Name="table1">
+        <Height>1.55in</Height>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.5in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>59</ZIndex>
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>ID</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>58</ZIndex>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>57</ZIndex>
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Size (MB)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>56</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <Value>Space  Available</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>55</ZIndex>
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Log Size</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox19">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>54</ZIndex>
+                      <rd:DefaultName>textbox19</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Space Available</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>53</ZIndex>
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Recovery Model</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>52</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Comp Level</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox27">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>51</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Create Date</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox22">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>YellowGreen</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>50</ZIndex>
+                      <rd:DefaultName>textbox22</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Last Backup</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.2in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fid">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>Honeydew</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <rd:DefaultName>fid</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!fid.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="FileName">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>Honeydew</BackgroundColor>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <rd:DefaultName>FileName</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!FileName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fSize">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>#,##0.00</Format>
+                        <BackgroundColor>Honeydew</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <rd:DefaultName>fSize</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!fSize.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fSpaceUsed">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>#,##0.00</Format>
+                        <BackgroundColor>Honeydew</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>fSpaceUsed</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!fSpaceUsed.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="AutogrowMax">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>#,##0.00</Format>
+                        <BackgroundColor>Honeydew</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <rd:DefaultName>AutogrowMax</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!AutogrowMax.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Growth">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>#,##0.00</Format>
+                        <BackgroundColor>Honeydew</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>Growth</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Growth.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox26">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <rd:DefaultName>textbox26</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox38">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox39">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox33">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <FontSize>8pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>textbox33</rd:DefaultName>
+                      <Visibility>
+                        <ToggleItem>dbid</ToggleItem>
+                      </Visibility>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Visibility>
+                <ToggleItem>dbid</ToggleItem>
+              </Visibility>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>Databases</DataSetName>
+        <Top>1.5in</Top>
+        <Width>9in</Width>
+        <TableGroups>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>0.25in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="dbid">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>49</ZIndex>
+                          <ToggleImage>
+                            <InitialState>true</InitialState>
+                          </ToggleImage>
+                          <rd:DefaultName>dbid</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!dbid.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="name">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <TextDecoration>Underline</TextDecoration>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <Color>Blue</Color>
+                            <PaddingBottom>1pt</PaddingBottom>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>48</ZIndex>
+                          <ToggleImage>
+                            <InitialState>true</InitialState>
+                          </ToggleImage>
+                          <Action>
+                            <Drillthrough>
+                              <Parameters>
+                                <Parameter Name="srv_id">
+                                  <Value>= Parameters!srv_id.Value</Value>
+                                </Parameter>
+                                <Parameter Name="inst_id">
+                                  <Value>= Parameters!inst_id.Value</Value>
+                                </Parameter>
+                                <Parameter Name="dbId">
+                                  <Value>=Fields!dbid.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                              <ReportName>SQL Server Database Details</ReportName>
+                            </Drillthrough>
+                          </Action>
+                          <rd:DefaultName>name</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!name.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="dbSize">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <Format>#,##0.00</Format>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>47</ZIndex>
+                          <rd:DefaultName>dbSize</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!dbSize.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="SpaceAvailable">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <Format>#,##0.00</Format>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>46</ZIndex>
+                          <rd:DefaultName>SpaceAvailable</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!SpaceAvailable.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="txSize">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <Format>#,##0.00</Format>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>45</ZIndex>
+                          <rd:DefaultName>txSize</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!txSize.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="txSpaceAvailable">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <Format>#,##0.00</Format>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>44</ZIndex>
+                          <rd:DefaultName>txSpaceAvailable</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!txSpaceAvailable.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="RecoveryModel">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>43</ZIndex>
+                          <rd:DefaultName>RecoveryModel</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!RecoveryModel.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox28">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>42</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!CompatibilityLevel.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox30">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <Format>d</Format>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>41</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!CreateDate.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="txLastBackup">
+                          <Style>
+                            <BorderStyle>
+                              <Bottom>Solid</Bottom>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <BackgroundColor>GreenYellow</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>40</ZIndex>
+                          <rd:DefaultName>txLastBackup</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!txLastBackup.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+                <TableRow>
+                  <Height>0.2in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox126">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>39</ZIndex>
+                          <rd:DefaultName>textbox126</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox72">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>38</ZIndex>
+                          <rd:DefaultName>textbox72</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>FileGroup</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox95">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>37</ZIndex>
+                          <rd:DefaultName>textbox95</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox131">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>36</ZIndex>
+                          <rd:DefaultName>textbox131</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox132">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>35</ZIndex>
+                          <rd:DefaultName>textbox132</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox133">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>34</ZIndex>
+                          <rd:DefaultName>textbox133</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox135">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>33</ZIndex>
+                          <rd:DefaultName>textbox135</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox31">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>32</ZIndex>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox32">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>31</ZIndex>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox134">
+                          <Style>
+                            <BorderStyle>
+                              <Top>Solid</Top>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>30</ZIndex>
+                          <rd:DefaultName>textbox134</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <Grouping Name="DBgroup">
+              <GroupExpressions>
+                <GroupExpression>=Fields!dbid.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </TableGroup>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>0.2in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="fgid">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>Honeydew</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>29</ZIndex>
+                          <rd:DefaultName>fgid</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!fgid.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="FileGroupName">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>Honeydew</BackgroundColor>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>28</ZIndex>
+                          <rd:DefaultName>FileGroupName</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!FileGroupName.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="fgSize">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <Format>#,##0.00</Format>
+                            <BackgroundColor>Honeydew</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>27</ZIndex>
+                          <rd:DefaultName>fgSize</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Sum(Fields!fgSize.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox52">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>26</ZIndex>
+                          <rd:DefaultName>textbox52</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox53">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>25</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <rd:DefaultName>textbox53</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox54">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>24</ZIndex>
+                          <rd:DefaultName>textbox54</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox110">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>23</ZIndex>
+                          <rd:DefaultName>textbox110</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox34">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>22</ZIndex>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox35">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>21</ZIndex>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox55">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>20</ZIndex>
+                          <rd:DefaultName>textbox55</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Visibility>
+                    <ToggleItem>dbid</ToggleItem>
+                  </Visibility>
+                </TableRow>
+                <TableRow>
+                  <Height>0.2in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox29">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>19</ZIndex>
+                          <rd:DefaultName>textbox29</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox56">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>18</ZIndex>
+                          <rd:DefaultName>textbox56</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>File</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox99">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>17</ZIndex>
+                          <rd:DefaultName>textbox99</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox100">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>16</ZIndex>
+                          <rd:DefaultName>textbox100</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>Used (MB)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox101">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>15</ZIndex>
+                          <rd:DefaultName>textbox101</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>Autogrow</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox102">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BackgroundColor>PaleGreen</BackgroundColor>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>14</ZIndex>
+                          <rd:DefaultName>textbox102</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value>Growth</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox104">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>13</ZIndex>
+                          <rd:DefaultName>textbox104</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox36">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>12</ZIndex>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox37">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>11</ZIndex>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox103">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <TextAlign>Center</TextAlign>
+                            <FontSize>8pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>700</FontWeight>
+                          </Style>
+                          <ZIndex>10</ZIndex>
+                          <rd:DefaultName>textbox103</rd:DefaultName>
+                          <Visibility>
+                            <ToggleItem>dbid</ToggleItem>
+                          </Visibility>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <Grouping Name="FileGroup">
+              <GroupExpressions>
+                <GroupExpression>=Fields!fgid.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </TableGroup>
+        </TableGroups>
+        <Left>0.125in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.875in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.375in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Style />
+    <Height>5.75in</Height>
+  </Body>
+  <TopMargin>1in</TopMargin>
+  <DataSources>
+    <DataSource Name="SQLH2Repository">
+      <rd:DataSourceID>e2c97ad0-3c49-4b40-973e-0718efb236cb</rd:DataSourceID>
+      <DataSourceReference>SQLH2Repository</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Code />
+  <Width>14.375in</Width>
+  <DataSets>
+    <DataSet Name="Servers">
+      <Fields>
+        <Field Name="srv_id">
+          <DataField>srv_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     srv_id, name
+FROM         dbo.mgr_server s
+WHERE     EXISTS
+                          (SELECT     *
+                            FROM          mgr_instance i
+                            WHERE      s.srv_id = i.srv_id)
+ORDER BY name</CommandText>
+      </Query>
+    </DataSet>
+    <DataSet Name="Instances">
+      <Fields>
+        <Field Name="inst_id">
+          <DataField>inst_id</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     inst_id, name
+FROM         dbo.mgr_instance
+WHERE     (srv_id = @srv_id)
+ORDER BY inst_id</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="Databases">
+      <Fields>
+        <Field Name="dbid">
+          <DataField>dbid</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CompatibilityLevel">
+          <DataField>CompatibilityLevel</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="CreateDate">
+          <DataField>CreateDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="dbSize">
+          <DataField>dbSize</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SpaceAvailable">
+          <DataField>SpaceAvailable</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="txSize">
+          <DataField>txSize</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="txSpaceAvailable">
+          <DataField>txSpaceAvailable</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="txLastBackup">
+          <DataField>txLastBackup</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RecoveryModel">
+          <DataField>RecoveryModel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fgid">
+          <DataField>fgid</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="FileGroupName">
+          <DataField>FileGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fgSize">
+          <DataField>fgSize</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="fid">
+          <DataField>fid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FileName">
+          <DataField>FileName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fSize">
+          <DataField>fSize</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="fSpaceUsed">
+          <DataField>fSpaceUsed</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="AutogrowMax">
+          <DataField>AutogrowMax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Growth">
+          <DataField>Growth</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     d.dbid, d.name, d.CompatibilityLevel, d.CreateDate, d.dbSize, d.SpaceAvailable, d.txSize, d.txSpaceAvailable, d.txLastBackup, 
+                      r.name AS RecoveryModel, g.fgid, g.name AS FileGroupName, g.fgSize, f.fid, f.name AS FileName, f.fSize, f.fSpaceUsed, 
+                      CASE Growth WHEN 0 THEN 'No Autogrow' ELSE (CASE MaxSize WHEN - 1 THEN 'Unlimited' ELSE LTRIM(STR(MaxSize)) END) END AS AutogrowMax, 
+                      CASE WHEN Growth &gt; 0 AND GrowthType = 0 THEN LTRIM(STR(Growth)) + 'MB' WHEN Growth &gt; 0 AND GrowthType = 1 THEN LTRIM(STR(Growth)) 
+                      + '%' END AS Growth
+FROM         dbo.c_database d INNER JOIN
+                      dbo.c_filegroup g ON d.srv_id = g.srv_id AND d.inst_id = g.inst_id AND d.dbid = g.dbid INNER JOIN
+                      dbo.c_dbfile f ON f.srv_id = g.srv_id AND f.inst_id = g.inst_id AND f.dbid = g.dbid AND (f.fgid = g.fgid OR
+                      f.fgid = 0) INNER JOIN
+                      dbo.d_RecoveryModel r ON d.oRecoveryModel = r.RecoveryModel
+WHERE     (d.srv_id = @srv_id) AND (d.inst_id = @inst_id)
+ORDER BY d.srv_id, d.inst_id, d.dbid, g.fgid, f.fid</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>= Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>= Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="RunInfo">
+      <Fields>
+        <Field Name="run_id">
+          <DataField>run_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="datein">
+          <DataField>datein</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     TOP 1 r.run_id, r.datein
+FROM         dbo.mgr_run r INNER JOIN
+                      dbo.c_database d ON r.run_id = d.run_id
+WHERE     (d.srv_id = @srv_id) AND (d.inst_id = @inst_id)</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@srv_id">
+            <Value>=Parameters!srv_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@inst_id">
+            <Value>=Parameters!inst_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>1in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description>Database statistics for each SQL Server Instance</Description>
+  <rd:ReportID>549ba645-9ee6-40b0-9433-308c490ccd40</rd:ReportID>
+  <BottomMargin>1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="srv_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>srv_id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Server</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>srv_id</ValueField>
+          <LabelField>name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="inst_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Instances</DataSetName>
+          <ValueField>inst_id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Instance</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Instances</DataSetName>
+          <ValueField>inst_id</ValueField>
+          <LabelField>name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+</Report>

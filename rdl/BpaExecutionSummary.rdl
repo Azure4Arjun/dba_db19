@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <RightMargin>0.5in</RightMargin>
+  <Body>
+    <ReportItems>
+      <Line Name="line2">
+        <ZIndex>10</ZIndex>
+        <Top>4.125in</Top>
+        <Height>0in</Height>
+        <Width>-6.5in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Left>6.625in</Left>
+      </Line>
+      <Table Name="table1">
+        <Height>1.33333in</Height>
+        <ZIndex>9</ZIndex>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Tahoma</FontFamily>
+                        <BackgroundColor>MidnightBlue</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <Color>White</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>500</FontWeight>
+                      </Style>
+                      <ZIndex>23</ZIndex>
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox20">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Tahoma</FontFamily>
+                        <BackgroundColor>MidnightBlue</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <Color>White</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>500</FontWeight>
+                      </Style>
+                      <ZIndex>22</ZIndex>
+                      <rd:DefaultName>textbox20</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Tahoma</FontFamily>
+                        <BackgroundColor>MidnightBlue</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <Color>White</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>500</FontWeight>
+                      </Style>
+                      <ZIndex>21</ZIndex>
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Rule Name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Tahoma</FontFamily>
+                        <BackgroundColor>MidnightBlue</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <Color>White</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>500</FontWeight>
+                      </Style>
+                      <ZIndex>20</ZIndex>
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Result</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Tahoma</FontFamily>
+                        <BackgroundColor>MidnightBlue</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <Color>White</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>500</FontWeight>
+                      </Style>
+                      <ZIndex>19</ZIndex>
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Description</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox27">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Microsoft Sans Serif</FontFamily>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <FontSize>9pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>textbox27</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox22">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Microsoft Sans Serif</FontFamily>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <FontSize>9pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <rd:DefaultName>textbox22</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="bestpractice_name">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Microsoft Sans Serif</FontFamily>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontSize>9pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <rd:DefaultName>bestpractice_name</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!bestpractice_name.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Result">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Microsoft Sans Serif</FontFamily>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontSize>9pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>Result</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Result.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="message">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontFamily>Microsoft Sans Serif</FontFamily>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontSize>9pt</FontSize>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>message</rd:DefaultName>
+                      <Value>=Fields!message.Value</Value>
+                      <CanGrow>true</CanGrow>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>result_summary</DataSetName>
+        <Top>4.375in</Top>
+        <Width>6.625in</Width>
+        <TableGroups>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>0.25in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="sqlserver">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Tahoma</FontFamily>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
+                            <FontSize>9pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>600</FontWeight>
+                          </Style>
+                          <ZIndex>18</ZIndex>
+                          <rd:DefaultName>sqlserver</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!sqlserver.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ColSpan>2</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="category">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Tahoma</FontFamily>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
+                            <FontSize>9pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                            <FontWeight>500</FontWeight>
+                          </Style>
+                          <ZIndex>17</ZIndex>
+                          <rd:DefaultName>category</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!category.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox17">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Tahoma</FontFamily>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
+                            <FontSize>9pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>16</ZIndex>
+                          <rd:DefaultName>textbox17</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox18">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <FontFamily>Tahoma</FontFamily>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
+                            <FontSize>9pt</FontSize>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>15</ZIndex>
+                          <rd:DefaultName>textbox18</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+            </Header>
+            <Grouping Name="group1">
+              <GroupExpressions>
+                <GroupExpression>=Fields!sqlserver.Value</GroupExpression>
+                <GroupExpression>=Fields!category.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <Height>0.25in</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox19">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>9</ZIndex>
+                          <rd:DefaultName>textbox19</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox21">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>8</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <rd:DefaultName>textbox21</rd:DefaultName>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox23">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>7</ZIndex>
+                          <rd:DefaultName>textbox23</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox26">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>6</ZIndex>
+                          <rd:DefaultName>textbox26</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox28">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                          <ZIndex>5</ZIndex>
+                          <rd:DefaultName>textbox28</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!sqlserver.Value</SortExpression>
+                <Direction>Ascending</Direction>
+              </SortBy>
+              <SortBy>
+                <SortExpression>=Fields!category.Value</SortExpression>
+                <Direction>Ascending</Direction>
+              </SortBy>
+            </Sorting>
+          </TableGroup>
+        </TableGroups>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <Height>0.33333in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox29">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <rd:DefaultName>textbox29</rd:DefaultName>
+                      <Value />
+                      <CanGrow>true</CanGrow>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <rd:DefaultName>textbox15</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.125in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.125in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.875in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.125in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+      <Textbox Name="textbox7">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <Top>1.26041in</Top>
+        <DataElementOutput>NoOutput</DataElementOutput>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <Value>Date of Execution:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>600</FontWeight>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <Top>1.26041in</Top>
+        <Height>0.25in</Height>
+        <Width>4.3125in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= First(Fields!exec_time.Value, "summaryinfo")</Value>
+        <Left>1.6875in</Left>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>600</FontWeight>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <Top>0.95833in</Top>
+        <Height>0.25in</Height>
+        <Width>4.3125in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= First(Fields!job_name.Value, "summaryinfo")</Value>
+        <Left>1.6875in</Left>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Top>0.95833in</Top>
+        <DataElementOutput>NoOutput</DataElementOutput>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <Value>Best Practice Name:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Line Name="line1">
+        <ZIndex>4</ZIndex>
+        <Top>1.625in</Top>
+        <Height>0in</Height>
+        <Width>6.5in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Left>0.125in</Left>
+      </Line>
+      <Textbox Name="textbox3">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>600</FontWeight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Top>0.65625in</Top>
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>4.32292in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= Parameters!executionid.Value</Value>
+        <Left>1.67708in</Left>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>0.65625in</Top>
+        <DataElementOutput>NoOutput</DataElementOutput>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <Value>Execution Results for:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>Microsoft Sans Serif</FontFamily>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderWidth>
+            <Bottom>3pt</Bottom>
+            <Top>3pt</Top>
+          </BorderWidth>
+          <BorderColor>
+            <Default>Gray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+            <Top>Solid</Top>
+          </BorderStyle>
+          <FontSize>18pt</FontSize>
+          <VerticalAlign>Middle</VerticalAlign>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>1pt</PaddingBottom>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>600</FontWeight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Height>0.5in</Height>
+        <Width>6.875in</Width>
+        <CanGrow>true</CanGrow>
+        <CanShrink>true</CanShrink>
+        <Value>SQL Server Best Practices Analyzer</Value>
+      </Textbox>
+      <Chart Name="chart1">
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Legend>
+          <Visible>true</Visible>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <Palette>SemiTransparent</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Not_Complied.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker />
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Complied.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Exception.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker />
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Partial.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <CategoryAxis>
+          <Axis>
+            <Title>
+              <Caption>SQL Server</Caption>
+            </Title>
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <DataSetName>sqlbpa</DataSetName>
+        <Type>Bar</Type>
+        <Top>1.875in</Top>
+        <Title>
+          <Style />
+        </Title>
+        <Width>6.25in</Width>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart1_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!sqlserver.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=Fields!sqlserver.Value</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Height>2in</Height>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <StaticSeries>
+              <StaticMember>
+                <Label>Not Complied</Label>
+              </StaticMember>
+              <StaticMember>
+                <Label>Complied</Label>
+              </StaticMember>
+              <StaticMember>
+                <Label>Exception</Label>
+              </StaticMember>
+              <StaticMember>
+                <Label>Partial</Label>
+              </StaticMember>
+            </StaticSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Subtype>Stacked</Subtype>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <Left>0.125in</Left>
+        <ValueAxis>
+          <Axis>
+            <Title>
+              <Caption>Number Of Rules</Caption>
+            </Title>
+            <MajorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Interlaced>true</Interlaced>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+      </Chart>
+    </ReportItems>
+    <Style />
+    <Height>6.125in</Height>
+  </Body>
+  <TopMargin>1in</TopMargin>
+  <DataSources>
+    <DataSource Name="sqlbpa">
+      <rd:DataSourceID>0d5d1403-33ee-4a5c-a84c-ec3afd7d8a41</rd:DataSourceID>
+      <DataSourceReference>sqlbpa</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>7in</Width>
+  <DataSets>
+    <DataSet Name="sqlbpa">
+      <Fields>
+        <Field Name="sqlserver">
+          <DataField>sqlserver</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Complied">
+          <DataField>Complied</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Partial">
+          <DataField>Partial</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Not_Complied">
+          <DataField>Not Complied</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Exception">
+          <DataField>Exception</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>sqlbpa</DataSourceName>
+        <CommandText>SELECT     sqlserver, SUM(CASE WHEN bir.result = 0 THEN 1 ELSE 0 END) AS Complied, SUM(CASE WHEN bir.result = 1 THEN 1 ELSE 0 END) AS Partial, 
+                      SUM(CASE WHEN bir.result = 2 THEN 1 ELSE 0 END) AS [Not Complied], SUM(CASE WHEN bir.result = 3 THEN 1 ELSE 0 END) AS Exception
+FROM         bpa_instance_results bir
+WHERE     (execution_id = @executionid)
+GROUP BY sqlserver</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@executionid">
+            <Value>=Parameters!executionid.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+    <DataSet Name="result_summary">
+      <Fields>
+        <Field Name="sqlserver">
+          <DataField>sqlserver</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="category">
+          <DataField>category</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bestpractice_name">
+          <DataField>bestpractice_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Result">
+          <DataField>Result</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="message">
+          <DataField>message</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>sqlbpa</DataSourceName>
+        <CommandText>select 	bir.sqlserver,
+	bb.category, 
+	bb.bestpractice_name, 
+	case when bir.result=0 then 'Complied' when bir.result=1 then 'Partial Compliance' when bir.result=2 then 'Non Compliance' when bir.result=3 then 'Error' end Result,
+	bir.message
+from dbo.bpa_instance_results bir join bpa_bestpractices bb on (bir.bestpractice_id=bb.bestpractice_id)
+where execution_id=@executionid
+order by result</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@executionid">
+            <Value>=Parameters!executionid.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="summaryinfo">
+      <Fields>
+        <Field Name="exec_time">
+          <DataField>exec_time</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="job_name">
+          <DataField>job_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>sqlbpa</DataSourceName>
+        <CommandText>select bp.exec_time, bp.job_name
+from bpa_job_execution_logs bp
+where bp.execution_id=@executionid</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@executionid">
+            <Value>=Parameters!executionid.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>0.5in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <rd:ReportID>64bd3fdf-c092-4497-881a-60a3f4ac7bb4</rd:ReportID>
+  <BottomMargin>1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="executionid">
+      <DataType>String</DataType>
+      <Prompt>BPA Execution Id:</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+</Report>

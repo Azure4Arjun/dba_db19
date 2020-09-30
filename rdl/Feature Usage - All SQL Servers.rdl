@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <RightMargin>1in</RightMargin>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox52">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <Format>g</Format>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>0.375in</Top>
+        <rd:DefaultName>textbox52</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>= Globals!ExecutionTime</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox46">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontSize>11pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Top>0.125in</Top>
+        <rd:DefaultName>textbox46</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>3.625in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Feature Usage - All SQL Servers</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Table Name="table1">
+        <Height>1.125in</Height>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.625in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>59</ZIndex>
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Instance</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>58</ZIndex>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Version</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>57</ZIndex>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Latest Run</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>56</ZIndex>
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Latest Run Time</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>55</ZIndex>
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Repli-cation</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>54</ZIndex>
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Full Text Enabled</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>53</ZIndex>
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>FT Tables</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox36">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>52</ZIndex>
+                      <rd:DefaultName>textbox36</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Broker Enabled</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox33">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>51</ZIndex>
+                      <rd:DefaultName>textbox33</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Broker Queues</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox18">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>50</ZIndex>
+                      <rd:DefaultName>textbox18</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Report Services</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox21">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>49</ZIndex>
+                      <rd:DefaultName>textbox21</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Reports Gen-d</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>48</ZIndex>
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Read Commit. Snapshot</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox30">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>47</ZIndex>
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Indexed Views</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox27">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>46</ZIndex>
+                      <rd:DefaultName>textbox27</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Mirroring</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>45</ZIndex>
+                      <rd:DefaultName>textbox15</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Assem-blies</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox45">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>44</ZIndex>
+                      <rd:DefaultName>textbox45</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Backups Taken</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox42">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>43</ZIndex>
+                      <rd:DefaultName>textbox42</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Event Notifica-tions</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox19">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>42</ZIndex>
+                      <rd:DefaultName>textbox19</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Notif. Subscrip-tions</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox28">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>41</ZIndex>
+                      <rd:DefaultName>textbox28</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Partition Schemes</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>NavajoWhite</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>40</ZIndex>
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Text In Row</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>39</ZIndex>
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>No. of Instances Using</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>38</ZIndex>
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>37</ZIndex>
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>36</ZIndex>
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox39">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>35</ZIndex>
+                      <rd:DefaultName>textbox39</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIf( Fields!Published.Value+ Fields!Subscribed.Value+ Fields!MergePublished.Value+ Fields!MergeSubscribed.Value+ Fields!Distributor.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="FullTextEnabled_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>34</ZIndex>
+                      <rd:DefaultName>FullTextEnabled_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIf(Fields!FullTextEnabled.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>33</ZIndex>
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>-</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BrokerEnabled_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>32</ZIndex>
+                      <rd:DefaultName>BrokerEnabled_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF(Fields!BrokerEnabled.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox35">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>31</ZIndex>
+                      <rd:DefaultName>textbox35</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>-</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RS_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>30</ZIndex>
+                      <rd:DefaultName>RS_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF(Fields!RS.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox23">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>29</ZIndex>
+                      <rd:DefaultName>textbox23</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>-</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ReadCommittedSnapshotOn_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>28</ZIndex>
+                      <rd:DefaultName>ReadCommittedSnapshotOn_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF(Fields!ReadCommittedSnapshotOn.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="IndexedViews_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>27</ZIndex>
+                      <rd:DefaultName>IndexedViews_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF(Fields!IndexedViews.Value,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Mirroring_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>26</ZIndex>
+                      <rd:DefaultName>Mirroring_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF(Fields!Mirroring.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Assemblies_1">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>25</ZIndex>
+                      <rd:DefaultName>Assemblies_1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF(Fields!Assemblies.Value&gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox47">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>24</ZIndex>
+                      <rd:DefaultName>textbox47</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>-</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox44">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>23</ZIndex>
+                      <rd:DefaultName>textbox44</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF( Fields!Notifications.Value &gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>22</ZIndex>
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF( Fields!NotificationSubscriptions.Value &gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>21</ZIndex>
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF( Fields!PartitionSchemes.Value &gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox31">
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                          <Top>Solid</Top>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>20</ZIndex>
+                      <rd:DefaultName>textbox31</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(IIF( Fields!TextInRow.Value &gt;0,1,0))</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="name">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextDecoration>= IIf(Fields!major.Value=9,"Underline", "None")</TextDecoration>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <Color>=IIf ( Fields!major.Value=9,"Blue","Black")</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>19</ZIndex>
+                      <rd:DefaultName>name</rd:DefaultName>
+                      <Action>
+                        <Drillthrough>
+                          <Parameters>
+                            <Parameter Name="srv_id">
+                              <Value>=Fields!srv_id.Value</Value>
+                            </Parameter>
+                            <Parameter Name="inst_id">
+                              <Value>=Fields!inst_id.Value</Value>
+                            </Parameter>
+                          </Parameters>
+                          <ReportName>Feature Usage - Instance and Database Details</ReportName>
+                        </Drillthrough>
+                      </Action>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!name.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="version">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>18</ZIndex>
+                      <rd:DefaultName>version</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!version.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="run_id">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>d</Format>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>17</ZIndex>
+                      <rd:DefaultName>run_id</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!run_id.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="datein">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <Format>d</Format>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>16</ZIndex>
+                      <rd:DefaultName>datein</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!datein.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>15</ZIndex>
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=IIf( Fields!Published.Value+ Fields!Subscribed.Value+ Fields!MergePublished.Value+ Fields!MergeSubscribed.Value+ Fields!Distributor.Value&gt;0,"Yes","")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="FullTextEnabled">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <rd:DefaultName>FullTextEnabled</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=IIf(Fields!FullTextEnabled.Value,"Yes","")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="FTTables">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <rd:DefaultName>FTTables</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!FTTables.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="BrokerEnabled">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <rd:DefaultName>BrokerEnabled</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=IIF(Fields!BrokerEnabled.Value,"Yes","")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Queues">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <rd:DefaultName>Queues</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Queues.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="RS">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <rd:DefaultName>RS</rd:DefaultName>
+                      <Value>=IIf(Fields!RS.Value,"Yes","")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ReportsGenerated">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <rd:DefaultName>ReportsGenerated</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!ReportsGenerated.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ReadCommittedSnapshotOn">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <rd:DefaultName>ReadCommittedSnapshotOn</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=IIf(Fields!ReadCommittedSnapshotOn.Value,"Yes","")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="IndexedViews">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <rd:DefaultName>IndexedViews</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!IndexedViews.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Mirroring">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>Mirroring</rd:DefaultName>
+                      <Value>=IIf(Fields!Mirroring.Value,"Yes","")</Value>
+                      <CanGrow>true</CanGrow>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Assemblies">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <rd:DefaultName>Assemblies</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Assemblies.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Backups">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>Backups</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Backups.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Notifications">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <rd:DefaultName>Notifications</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Notifications.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="NotificationSubscriptions">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <rd:DefaultName>NotificationSubscriptions</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!NotificationSubscriptions.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PartitionSchemes">
+                      <Style>
+                        <BorderStyle>
+                          <Left>Solid</Left>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <Color>=IIf( Fields!PartitionSchemes.Value,"Black",IIf(RowNumber(Nothing) Mod 2, "White", "Gainsboro"))</Color>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>PartitionSchemes</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PartitionSchemes.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="TextInRow">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BackgroundColor>=IIf(RowNumber(Nothing) Mod 2,"White","Gainsboro")</BackgroundColor>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>TextInRow</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!TextInRow.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>Fuse</DataSetName>
+        <Top>0.75in</Top>
+        <Width>14.875in</Width>
+        <Left>0.125in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.875in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Style />
+    <Height>5.5in</Height>
+  </Body>
+  <TopMargin>1in</TopMargin>
+  <DataSources>
+    <DataSource Name="SQLH2Repository">
+      <rd:DataSourceID>6046c101-d37b-4f01-9f61-5062747d45c8</rd:DataSourceID>
+      <DataSourceReference>SQLH2Repository</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Code />
+  <Width>15.125in</Width>
+  <DataSets>
+    <DataSet Name="Fuse">
+      <Fields>
+        <Field Name="srv_id">
+          <DataField>srv_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="inst_id">
+          <DataField>inst_id</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="version">
+          <DataField>version</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="major">
+          <DataField>major</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="run_id">
+          <DataField>run_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="datein">
+          <DataField>datein</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FullTextEnabled">
+          <DataField>FullTextEnabled</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Published">
+          <DataField>Published</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Subscribed">
+          <DataField>Subscribed</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MergePublished">
+          <DataField>MergePublished</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MergeSubscribed">
+          <DataField>MergeSubscribed</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Distributor">
+          <DataField>Distributor</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BrokerEnabled">
+          <DataField>BrokerEnabled</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ReadCommittedSnapshotOn">
+          <DataField>ReadCommittedSnapshotOn</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IndexedViews">
+          <DataField>IndexedViews</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Mirroring">
+          <DataField>Mirroring</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RS">
+          <DataField>RS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Assemblies">
+          <DataField>Assemblies</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Backups">
+          <DataField>Backups</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Notifications">
+          <DataField>Notifications</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NotificationSubscriptions">
+          <DataField>NotificationSubscriptions</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FTTables">
+          <DataField>FTTables</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PartitionSchemes">
+          <DataField>PartitionSchemes</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ReportsGenerated">
+          <DataField>ReportsGenerated</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Queues">
+          <DataField>Queues</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TextInRow">
+          <DataField>TextInRow</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>SQLH2Repository</DataSourceName>
+        <CommandText>SELECT     i.srv_id, i.inst_id, m.name, i.version, i.major, r.run_id, r.datein,
+                          (SELECT     COUNT(*)
+                            FROM          c_database d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oFullTextEnabled &gt; 0) AS FullTextEnabled,
+                          (SELECT     COUNT(*)
+                            FROM          c_database d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oPublished &gt; 0) AS Published,
+                          (SELECT     COUNT(*)
+                            FROM          c_database d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oSubscribed &gt; 0) AS Subscribed,
+                          (SELECT     COUNT(*)
+                            FROM          c_database d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oMergePublished &gt; 0) AS MergePublished,
+                          (SELECT     COUNT(*)
+                            FROM          c_database d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oMergeSubscribed &gt; 0) AS MergeSubscribed,
+                          (SELECT     COUNT(*)
+                            FROM          c_database2 d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oDistributor &gt; 0) AS Distributor,
+                          (SELECT     COUNT(*)
+                            FROM          c_database2 d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oBrokerEnabled &gt; 0) AS BrokerEnabled,
+                          (SELECT     COUNT(*)
+                            FROM          c_database2 d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND oReadCommittedSnapshotOn &gt; 0) 
+                      AS ReadCommittedSnapshotOn,
+                          (SELECT     SUM(qIndexedViews)
+                            FROM          c_database2 d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND qIndexedViews &gt; 0) AS IndexedViews,
+                          (SELECT     COUNT(*)
+                            FROM          c_database2 d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND mirroringWitness &gt; 0) AS Mirroring,
+                          (SELECT     COUNT(*)
+                            FROM          c_database2 d
+                            WHERE      i.run_id = d.run_id AND i.srv_id = d.srv_Id AND i.inst_id = d.inst_id AND IsRosetta &gt; 0) AS RS,
+                          (SELECT     SUM(qObjects)
+                            FROM          c_assemblies a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id) AS Assemblies,
+                          (SELECT     SUM(qObjects)
+                            FROM          c_backups a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id) AS Backups,
+                          (SELECT     SUM(qObjects)
+                            FROM          c_event_notifications a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id) AS Notifications,
+                          (SELECT     SUM(qObjects)
+                            FROM          c_notification_subscriptions a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id) AS NotificationSubscriptions,
+                          (SELECT     SUM(TABLEs)
+                            FROM          c_ft a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id AND TABLEs &gt; 0) AS FTTables,
+                          (SELECT     COUNT(*)
+                            FROM          c_partition_scheme a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id) AS PartitionSchemes,
+                          (SELECT     SUM(qObjects)
+                            FROM          c_rs a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id AND qObjects &gt; 0) AS ReportsGenerated,
+                          (SELECT     SUM(Queues)
+                            FROM          c_sb a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id AND Queues &gt; 0) AS Queues,
+                          (SELECT     SUM(qObjects)
+                            FROM          c_TableTextInRowLimit a
+                            WHERE      a.run_id = i.run_id AND a.srv_id = i.srv_id AND a.inst_id = i.inst_id AND Limit &gt; 0) AS TextInRow
+FROM         dbo.c_instance i INNER JOIN
+                      dbo.mgr_instance m ON i.srv_id = m.srv_id AND i.inst_id = m.inst_id INNER JOIN
+                      dbo.mgr_run r ON i.run_id = r.run_id
+ORDER BY m.name</CommandText>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>1in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description>SQL Server Features Installed or Enabled. Rollup Report of all SQL Servers in an Enterprise. </Description>
+  <rd:ReportID>1ce4108a-3e5a-4e1d-943e-15f7f9a84577</rd:ReportID>
+  <BottomMargin>1in</BottomMargin>
+</Report>
